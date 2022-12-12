@@ -9,7 +9,7 @@ let b='Justas';
 let c='Mano vardas ';
 console.log(c + b);
 
-/*Trečia užduoti
+/*Trečia užduotis*/
 let metai=1997;
 let menuo=12;
 let diena=15;
