@@ -1,0 +1,121 @@
+@media only screen and (max-width: 576px) {
+    .Header{
+        flex-direction: column;
+    }
+    .headerAside{
+        justify-content: center;
+    }
+    .classHeader{
+        align-items: center;
+    }
+    .classHeader h5{
+        text-align: center;
+    }
+    .classHeader nav {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        flex-direction: column;
+        width: 100%;
+    }
+    .mainDiv{
+        max-width: 100%
+    }
+    .classFooter{
+        flex-direction: column;
+    }
+    .classFooter nav ul{
+        flex-direction: column;
+    }
+    .classHeader nav ul{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .Header{
+    flex-direction: row;
+}
+    .classHeader{
+        align-items: center;
+    }
+    .classHeader h5{
+         text-align: center;
+     }
+    .headerAside{
+        justify-content: flex-start;
+    }
+    .classHeader nav ul{
+        flex-direction: column;
+    }
+    .classFooter{
+        flex-direction: column;
+    }
+    .classFooter nav ul{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Header{
+        flex-direction: row;
+    }
+    .classHeader{
+        align-items: flex-end;
+    }
+    .headerAside{
+        justify-content: flex-start;
+    }
+    .classHeader nav ul{
+        flex-direction: column;
+    }
+    .classFooter{
+        flex-direction: column;
+    }
+    .classFooter nav ul{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .Header{
+        flex-direction: row;
+    }
+    .classHeader{
+        align-items: flex-end;
+    }
+    .headerAside{
+        justify-content: flex-start;
+    }
+    .classHeader nav ul{
+        flex-direction: row;
+    }
+    .classFooter{
+        flex-direction: row;
+    }
+    .classFooter nav ul{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .Header{
+        flex-direction: row;
+    }
+    .classHeader{
+        align-items: flex-end;
+    }
+    .headerAside{
+        justify-content: flex-start;
+    }
+    .classHeader nav ul{
+        flex-direction: row;
+    }
+    .classFooter{
+        flex-direction: row;
+    }
+    .classFooter nav ul{
+        flex-direction: row;
+    }
+}

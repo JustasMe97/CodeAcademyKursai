@@ -1,0 +1,141 @@
+header {
+    justify-content: space-between;
+     color: #9f9c9c;
+ }
+.classHeader{
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #002626;
+
+}
+.classHeader h5{
+    background-color: #002626;
+    padding-right: 5px;
+
+}
+.headerAside{
+    display: flex;
+    background-color: #002626;
+    justify-content: flex-start;
+    align-items: center;
+}
+.headerAside h1{
+    color: #9f9c9c;
+    font-size: 2em;
+}
+.classHeader nav {
+    background-color: #002626;
+    padding: 5px;
+}
+.classHeader nav ul {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+.classHeader nav li {
+    float: left;
+    display: flex;
+    padding: 0 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.classHeader nav li > a{
+    color: white;
+    text-decoration: none;
+}
+.classHeader nav li:hover{
+    background-color: slategrey;
+}
+.classHeader nav li:last-of-type {
+    border-right: none;
+    background-color: #a59b9b;
+    border-radius: 8px;
+}
+.classHeader nav li:last-of-type:hover {
+    background-color: slategrey;
+}
+
+.classSection{
+    justify-content: space-between;
+    align-items: center;
+    color: #9f9c9c;
+    background-color: #002626;
+    padding: 30px 10px 10px 10px;
+}
+.classSection h2{
+    text-align: center;
+}
+.classSection p{
+    text-align: center;
+}
+.classSection a{
+    text-align: center;
+    border: solid white 2px;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+
+}
+
+main{
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #9f9c9c;
+}
+.mainDiv img{
+    max-width: 100%;
+    max-height: 100%
+}
+.mainDiv {
+    max-width: 33%;
+}
+
+.classFooter{
+    justify-content: space-between;
+    align-items: center;
+    color: #9f9c9c;
+    background-color: #002626;
+}
+.classFooter nav {
+    background-color: #002626;
+}
+.classFooter nav ul {
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+.classFooter nav li {
+    float: left;
+    display: flex;
+    padding: 0 10px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.classFooter nav li > a{
+    color: white;
+    text-decoration: none;
+}
+.classFooter nav li:hover{
+    background-color: slategrey;
+}
+.classFooter nav li:last-of-type {
+    border-right: none;
+}
+.classFooter nav li:last-of-type:hover {
+    background-color: slategrey;
+}
+
+.leftColorFill1{
+    background-color: #002626;
+}
+.leftColorFill2{
+    background-color: #002626;
+}
+.rightColorFill1{
+    background-color: #002626;
+}
+.rightColorFill2{
+    background-color: #002626;
+}
