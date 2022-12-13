@@ -1,10 +1,12 @@
 <html>
 <body>
-<h1>Antras bandymas</h1>
-<p>Antras paragrafas</p>
+<h1>Antroji Užduotis</h1>
 
 <script>
-    document.write(5 + 6);
+    let a=[-5, -4, -3, -2, -1, 0];
+    let b=[-4, -3, -2, -1, 0, 1, 2, 3, 4];
+    let intersection = a.filter(x => b.includes(x));
+    document.write('Pirmas masyvas ['+a+'] Antras masyvas ['+b+'] Sankirta: ['+intersection+']');
 </script>
 
 </body>

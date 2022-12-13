@@ -1,9 +1,26 @@
 <html>
 <body>
-<h1>Trecias bandymas</h1>
-<p>Trecias paragrafas</p>
+<h1>3/4/5 užduotys</h1>
+<h2>3,4 užduočių atsakymai konsolėje, 5 paragrafe.</h2>
+<p id="paragraph"></p>
 
-<button onclick="document.write(5 + 6)">Pabandyk</button>
+<script>
+    let vardas, pavarde, kursas, mokIstaiga, pazymiai;
+    vardas='Jonas';
+    pavarde='Jonaitis';
+    kursas=3;
+    mokIstaiga='VU';
+    pazymiai=[7,10,8,10];
 
+    let studentas=vardas+' '+pavarde+' mokosi '+mokIstaiga+', '+kursas+' kurse, jo pažymiai ['+ pazymiai+']';
+
+    console.log(studentas);
+    let tipai ="parametro '"+vardas+"' tipas yra '"+typeof(vardas)+"'<br>"+
+               "parametro '"+pavarde+"' tipas yra '"+typeof(pavarde)+"'<br>"+
+               "parametro '"+kursas+"' tipas yra '"+typeof(kursas)+"'<br>"+
+               "parametro '"+mokIstaiga+"' tipas yra '"+typeof(mokIstaiga)+"'<br>"+
+               "parametro '"+pazymiai+"' tipas yra '"+typeof(pazymiai)+"'<br>";
+    document.getElementById('paragraph').innerHTML=tipai;
+</script>
 </body>
 </html>
