@@ -1,13 +1,32 @@
 <html>
 <body>
 <h1>Antroji Užduotis</h1>
-
 <script>
-    let a=[-5, -4, -3, -2, -1, 0];
-    let b=[-4, -3, -2, -1, 0, 1, 2, 3, 4];
-    let intersection = a.filter(x => b.includes(x));
-    document.write('Pirmas masyvas ['+a+'] Antras masyvas ['+b+'] Sankirta: ['+intersection+']');
-</script>
+    let a=-5;
+    let b=0;
+    let c=-4;
+    let d=4;
+    let x;
+    let y
 
+    if(a<=c&&b>c&&b<d){
+        x=c;
+        y=b;
+        document.write('Pirmas intervalas ['+a+';'+b+'] Antras intervalas ['+c+';'+d+'] Sankirta: ['+x+';'+y+']');
+    } else if(a<=c&&b>c&&b>d){
+        x=c;
+        y=d;
+        document.write('Pirmas intervalas ['+a+';'+b+'] Antras intervalas ['+c+';'+d+'] Sankirta: ['+x+';'+y+']');
+    } else if(a<=c&&b<c){
+        document.write('Pirmas intervalas ['+a+';'+b+'] Antras intervalas ['+c+';'+d+'] - Intervalai nesusikerta');
+    } else if(a<=c&&b==c){
+        x=c;
+        y=c;
+        document.write('Pirmas intervalas ['+a+';'+b+'] Antras intervalas ['+c+';'+d+'] Sankirta: ['+x+';'+y+']');
+    } else{
+        document.write('Neteisingi intervalai, a turi būti <= c');
+    }
+
+</script>
 </body>
 </html>
