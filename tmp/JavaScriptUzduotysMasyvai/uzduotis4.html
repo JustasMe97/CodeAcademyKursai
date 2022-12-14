@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Ketvirtoji uzduotis</h1>
+<p id="paragraph"></p>
+
+<script>
+    let objectCount=0;
+    let A=['A','B','1',1,2,'Vardas','',[],null];
+    for(let i=0; i<A.length;i++){
+        if(typeof A[i]==='object'){
+            objectCount=objectCount+1;
+        }
+    }
+    document.getElementById('paragraph').innerHTML='Objektų kiekis duotame masyve: '+objectCount;
+</script>
+</body>
+</html>

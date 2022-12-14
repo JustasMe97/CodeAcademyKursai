@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Trecioji uzduotis</h1>
+<p id="paragraph"></p>
+
+<script>
+    var B=[];
+    let A=['A','B','1',1,2,'Vardas','',[],null];
+    for(let i=0; i<A.length;i++){
+        if(typeof A[i]==='number'){
+            B+=A[i];
+        }
+    }
+    for(let ind=0; ind<B.length;ind++){
+        document.getElementById('paragraph').innerHTML+=(ind+1)+'-asis skaicius: '+B[ind]+'<br>';
+    }
+</script>
+</body>
+</html>

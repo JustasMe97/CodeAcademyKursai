@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Penktoji uzduotis</h1>
+<p id="paragraph"></p>
+
+<script>
+    let sign='-';
+    let atsLine='';
+    let A=['A','B','1',1,2,'Vardas','',[],null];
+    for(let i=0; i<A.length;i++){
+        if(typeof A[i]==='string'){
+            atsLine+=A[i]+sign;
+        }
+    }
+    atsLine=atsLine.slice(0, -1);
+    document.getElementById('paragraph').innerHTML='Eilutė iš sujungtų string elementų, astkirtų "'+sign+'" simboliu <br>'+atsLine;
+</script>
+</body>
+</html>

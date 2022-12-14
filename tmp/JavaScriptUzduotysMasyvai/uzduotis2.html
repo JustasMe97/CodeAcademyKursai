@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Antroji uzduotis</h1>
+<p id="paragraph"></p>
+
+<script>
+    let zingsnis=4;
+    let A=['A','B','1',1,2,'Vardas','',[],null];
+    let ats='Kas '+zingsnis+' masyvo elementas: <br>';
+    for(let i=0; i<A.length;i=i+zingsnis){
+        ats+=(i+1)+' elementas: '+' '+A[i]+'<br>';
+    }
+    document.getElementById('paragraph').innerHTML+=ats;
+</script>
+</body>
+</html>
