@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<h1>Visos užduotys</h1>
+<p id="paragraph"></p>
+
+<script>
+    let vardas, pavarde, kursas, mokIstaiga, pazymiai;
+    vardas='Jonas';
+    pavarde='Jonaitis';
+    kursas=3;
+    mokIstaiga='VU';
+    pazymiai=[7,10,8,10];
+
+    let studentas=vardas+' '+pavarde+' mokosi '+mokIstaiga+', '+kursas+' kurse, jo pažymiai ['+ pazymiai+']';
+
+    console.log(studentas);
+    let tipai ="parametro '"+vardas+"' tipas yra '"+typeof(vardas)+"'<br>"+
+        "parametro '"+pavarde+"' tipas yra '"+typeof(pavarde)+"'<br>"+
+        "parametro '"+kursas+"' tipas yra '"+typeof(kursas)+"'<br>"+
+        "parametro '"+mokIstaiga+"' tipas yra '"+typeof(mokIstaiga)+"'<br>"+
+        "parametro '"+pazymiai+"' tipas yra '"+typeof(pazymiai)+"'<br>";
+    document.getElementById('paragraph').innerHTML=tipai;
+
+//4 uzd
+    let Petras={'vardas':'Petras', 'pavarde':'Petraitis', 'kursas':3,'mokIstaiga':'VU','pazymiai':[6,10,9,8]};
+//5 uzd
+    let Algis={'vardas':'Algis', 'pavarde':'Algaitis', 'kursas':2,'mokIstaiga':'KTU','pazymiai':[4,7,10,8]};
+    let Jurgis={'vardas':'Jurgis', 'pavarde':'Jurgaitis', 'kursas':2,'mokIstaiga':'VU','pazymiai':[6,7,7,8]};
+    let Domas={'vardas':'Domas', 'pavarde':'Domaitis', 'kursas':4,'mokIstaiga':'VDU','pazymiai':[6,8,8,10]};
+    let Vidmas={'vardas':'Vidmas', 'pavarde':'Vidmaitis', 'kursas':4,'mokIstaiga':'VDU','pazymiai':[4,5,8,10]};
+    let StudentuMasyvas=[Petras,Algis,Jurgis,Domas,Vidmas];
+//6 uzd
+    console.log('Penktojo studento duomenys: Vardas - '+ StudentuMasyvas[4].vardas+' Pavarde - '+ StudentuMasyvas[4].pavarde+
+        ' kursas - '+StudentuMasyvas[4].kursas+' mokymosi istaiga - '+StudentuMasyvas[4].mokIstaiga+' Pazymiai ['+StudentuMasyvas[4].pazymiai+']');
+//7 uzd
+    console.log(StudentuMasyvas[4].vardas+' '+StudentuMasyvas[4].pavarde+' mokosi '+StudentuMasyvas[4].mokIstaiga+', '
+        +StudentuMasyvas[4].kursas+' kurse, jo pažymiai ['+ StudentuMasyvas[4].pazymiai+']');
+//8uzd
+    console.log('Pirmo studento pazymiai: ')
+    for(let i=0; i<StudentuMasyvas[0].pazymiai.length;i++)
+    {
+        console.log(StudentuMasyvas[0].pazymiai[i]);
+    }
+//9uzd
+    console.log('Pirmo studento trys pirmieji pazymiai po pakelimo: ')
+    for(let i=0; i<3;i++) {
+        if (StudentuMasyvas[0].pazymiai[i] === 10) {
+            console.log(StudentuMasyvas[0].pazymiai[i]);
+        }
+        else {
+            StudentuMasyvas[0].pazymiai[i] = StudentuMasyvas[0].pazymiai[i]+1;
+            console.log(StudentuMasyvas[0].pazymiai[i]);
+        }
+    }
+//10 uzd
+    console.log('Ketvirto studento pazymiai: ')
+    for(let i=0; i<StudentuMasyvas[3].pazymiai.length;i++)
+    {
+        console.log(StudentuMasyvas[3].pazymiai[i]);
+    }
+    console.log('Ketvirto studento pirmuju triju pazymiu suma: ')
+    let pazymiuSuma=0;
+    if(StudentuMasyvas[3].pazymiai.length>=3) {
+        for (let i = 0; i < 3; i++) {
+            pazymiuSuma += StudentuMasyvas[3].pazymiai[i];
+        }
+        console.log(pazymiuSuma);
+    } else {
+        console.log('Studentas neturi triju pazymiu');
+    }
+//11 uzd
+    let daugybosAtsakymas=0;
+    console.log('Antro studento pazymiai: ')
+    for(let i=0; i<StudentuMasyvas[1].pazymiai.length;i++)
+    {
+        console.log(StudentuMasyvas[1].pazymiai[i]);
+    }
+    daugybosAtsakymas=StudentuMasyvas[1].pazymiai[0]*StudentuMasyvas[1].pazymiai[1];
+    console.log('Antro studento pazymiai pirmo ir antro pazymiu sandauga: '+daugybosAtsakymas);
+//12 uzd
+    console.log('Penktojo studento duomenys: Vardas - '+ StudentuMasyvas[4].vardas+' Pavarde - '+ StudentuMasyvas[4].pavarde+
+    ' kursas - '+StudentuMasyvas[4].kursas+' mokymosi istaiga - '+StudentuMasyvas[4].mokIstaiga+' Pazymiai ['+StudentuMasyvas[4].pazymiai+']');
+    if(typeof (StudentuMasyvas[4].kursas)==='number'){
+        console.log('kursas yra "number" tipo');
+
+    } else{
+        console.log('kursas nera "number" tipo');
+    }
+//13 uzd
+    console.log('Ar penktas studentas yra "number" tipo ir mokosi 4 kurse?');
+    if(typeof (StudentuMasyvas[4].kursas)==='number'&&StudentuMasyvas[4].kursas===4){
+        console.log('kursas yra "number" tipo ir studentas mokosi 4 kurse');
+    } else{
+        console.log('kursas nera "number" tipo arba studentas mokosi ne 4 kurse');
+    }
+//14 uzd
+    console.log('Ar studentas mokosi ketvirtame kurse?');
+    for(let i=0; i<StudentuMasyvas.length;i++){
+        if(StudentuMasyvas[i].kursas===4){
+            console.log(StudentuMasyvas[i].vardas+' '+StudentuMasyvas[i].pavarde+' yra abiturientas');
+        } else {
+            console.log(StudentuMasyvas[i].vardas+' '+StudentuMasyvas[i].pavarde+' yra toli nuo mokslų baigimo');
+        }
+    }
+//15 uzd
+    function suma(pirmasSkaicius, antrasSkaicius){
+       return pirmasSkaicius+antrasSkaicius;
+    }
+//16 uzd
+    let sumaSkaiciu=0;
+    for(let i=0;i<100;i++){
+        sumaSkaiciu=suma(sumaSkaiciu, i+1);
+    }
+    console.log('Sudejus visus skaiciu nuo 1 iki 100 gauname: '+ sumaSkaiciu);
+//17 uzd
+    let A=[1,3,6,5,7,2,2,4,4,8];
+    console.log('A masyvas ['+A+'] ')
+    let sumaMasyvoSkaiciu=0;
+    function sudetis(masyvas, tipas){
+        sumaMasyvoSkaiciu=0;
+        for(let i=0;i<A.length;i++){
+            if(tipas==='even'){
+            if( A[i]%2===0){
+                sumaMasyvoSkaiciu+=A[i];
+            }
+            } else if(tipas==='odd'){
+                if( A[i]%2!==0){
+                    sumaMasyvoSkaiciu+=A[i];
+                }
+            } else {
+                console.log('Neteisingas funkcijos sudetis() parametras');
+            }
+        }
+        return sumaMasyvoSkaiciu;
+    }
+    console.log('Lyginiu A masyvo skaiciu suma: '+sudetis(A,'even'));
+    console.log('Nelyginiu A masyvo skaiciu suma: '+sudetis(A,'odd'));
+//17 uzd antra dalis
+    function sudetisIndex(masyvas, tipas){
+        sumaMasyvoSkaiciu=0;
+        for(let i=0;i<A.length;i++){
+            if(tipas==='even'){
+                if( i%2===0){
+                    sumaMasyvoSkaiciu+=A[i];
+                }
+            } else if(tipas==='odd'){
+                if( i%2!==0){
+                    sumaMasyvoSkaiciu+=A[i];
+                }
+            } else {
+                console.log('Neteisingas funkcijos sudetisIndex() parametras');
+            }
+        }
+        return sumaMasyvoSkaiciu;
+    }
+    console.log('Lyginio indekso A masyvo elementu reiksmu suma: '+sudetisIndex(A,'even'));
+    console.log('Nelyginio indekso A masyvo elementu reiksmiu suma: '+sudetisIndex(A,'odd'));
+//17 uzd trecia dalis
+    function generator(skaicius){
+        for (let i = 0; i < skaicius; i++) {
+            A.push(Math.floor(Math.random() * 10));
+
+        }
+    }
+    generator(4); //Sugeneruojame ir idedame 4 skaicius i A masyva
+    console.log('A masyvas ['+A+'] ')
+
+</script>
+</body>
+</html>
